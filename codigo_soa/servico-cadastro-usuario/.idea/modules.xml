@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/servico-cadastro-usuario.iml" filepath="$PROJECT_DIR$/.idea/modules/servico-cadastro-usuario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/servico-cadastro-usuario_main.iml" filepath="$PROJECT_DIR$/.idea/modules/servico-cadastro-usuario_main.iml" group="servico-cadastro-usuario" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/servico-cadastro-usuario_test.iml" filepath="$PROJECT_DIR$/.idea/modules/servico-cadastro-usuario_test.iml" group="servico-cadastro-usuario" />
+    </modules>
+  </component>
+</project>

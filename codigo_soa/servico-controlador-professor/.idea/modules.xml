@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/servico-controlador-professor.iml" filepath="$PROJECT_DIR$/.idea/modules/servico-controlador-professor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/servico-controlador-professor_main.iml" filepath="$PROJECT_DIR$/.idea/modules/servico-controlador-professor_main.iml" group="servico-controlador-professor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/servico-controlador-professor_test.iml" filepath="$PROJECT_DIR$/.idea/modules/servico-controlador-professor_test.iml" group="servico-controlador-professor" />
+    </modules>
+  </component>
+</project>

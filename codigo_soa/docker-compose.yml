@@ -1,0 +1,35 @@
+version: '3'
+services:
+  servicecontroladorusuario:
+    build: servico-controlador-acesso/
+    links:
+      - servicocadastrousuario
+    ports:
+      - "8080:8080"
+  servicocadastrousuario:
+    build: servico-cadastro-usuario/
+    ports:
+      - "9999:8080"
+  servicocontroladorprofessor:
+    build: servico-controlador-professor/
+    links:
+      - servicocadastroprofessor
+    ports:
+      - "9998:8080"
+  servicocadastroprofessor:
+    build: servico-cadastro-professor/
+    ports:
+      - "9997:8080"
+  servicefachada:
+    build: servico-fachada/
+    links:
+      - servicecontroladorusuario
+      - servicocontroladorprofessor
+    ports:
+      - "9996:8080"
+  servicefrontend:
+    build: servico-frontend/
+    links:
+      - servicefachada
+    ports:
+      - "9995:8080"

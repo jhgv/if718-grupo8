@@ -1,0 +1,48 @@
+plugins {
+    id "java"
+    id "application"
+}
+
+group 'br.ufpe.cin'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+project.ext {
+    configPath = "$rootProject.projectDir/config/"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(
+        [group: "io.dropwizard", name: "dropwizard-core", version: "1.2.0"],
+        [group: "org.jsoup", name: "jsoup", version:"1.11.2"]
+    )
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+mainClassName = "br.ufpe.cin.MainApp"
+
+run {
+    args 'server', configPath + 'app_config.yml'
+}
+
+jar {
+    archiveName "servico-frontend.jar"
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    manifest { attributes 'Main-Class': mainClassName }
+}
+
+task downloadDependencies(type: Exec) {
+    configurations.testRuntime.files
+    commandLine 'echo', 'Downloaded all dependencies'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.0.1'
+}

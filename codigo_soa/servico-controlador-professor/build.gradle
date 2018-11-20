@@ -42,7 +42,3 @@ task downloadDependencies(type: Exec) {
     configurations.testRuntime.files
     commandLine 'echo', 'Downloaded all dependencies'
 }
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '4.0.1'
-}

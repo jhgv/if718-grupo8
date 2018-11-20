@@ -19,6 +19,7 @@ public class CadastrarProfessorResource {
     public Response cadastrarProfessor(Professor professor) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         String professorJson = mapper.writeValueAsString(professor);
+        System.out.println("Controlador");
         System.out.println(professorJson);
         int statusCode = Jsoup.connect("http://servicocadastroprofessor:8080/cadastrar/professor")
                 .requestBody(professorJson)

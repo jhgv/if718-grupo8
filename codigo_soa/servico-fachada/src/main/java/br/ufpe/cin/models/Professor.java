@@ -6,34 +6,26 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 public class Professor {
     @NotEmpty
-    private String data;
+    private String nome;
     @NotEmpty
-    private String descricao;
-    @NotEmpty
-    private Usuario participante;
+    private String email;
 
     @JsonCreator
     public Professor(
-            @JsonProperty("data") String data,
-            @JsonProperty("descricao") String descricao,
-            @JsonProperty("participante") Usuario participante) {
-        this.data = data;
-        this.descricao = descricao;
-        this.participante = participante;
+            @JsonProperty("nome") String nome,
+            @JsonProperty("email") String email) {
+        this.nome = nome;
+        this.email = email;
     }
 
-    @JsonProperty("data")
-    public String getData() {
-        return data;
+    @JsonProperty("nome")
+    public String getNome() {
+        return nome;
     }
 
-    @JsonProperty("descricao")
-    public String getDescricao() {
-        return descricao;
+    @JsonProperty("email")
+    public String getEmail() {
+        return email;
     }
 
-    @JsonProperty("participante")
-    public Usuario getParticipante() {
-        return participante;
-    }
 }

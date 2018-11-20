@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/servico-cadastro-professor.iml" filepath="$PROJECT_DIR$/.idea/modules/servico-cadastro-professor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/servico-cadastro-professor_main.iml" filepath="$PROJECT_DIR$/.idea/modules/servico-cadastro-professor_main.iml" group="servico-cadastro-professor" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/servico-cadastro-professor_test.iml" filepath="$PROJECT_DIR$/.idea/modules/servico-cadastro-professor_test.iml" group="servico-cadastro-professor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-cadastro-atividade.iml" filepath="$PROJECT_DIR$/.idea/modules/service-cadastro-atividade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-cadastro-atividade_main.iml" filepath="$PROJECT_DIR$/.idea/modules/service-cadastro-atividade_main.iml" group="service-cadastro-atividade" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-cadastro-atividade_test.iml" filepath="$PROJECT_DIR$/.idea/modules/service-cadastro-atividade_test.iml" group="service-cadastro-atividade" />
     </modules>
   </component>
 </project>

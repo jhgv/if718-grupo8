@@ -1,6 +1,7 @@
 package br.ufpe.cin;
 
 import br.ufpe.cin.resources.CadastrarProfessorResource;
+import br.ufpe.cin.resources.ListarProfessorResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Environment;
 
@@ -12,5 +13,6 @@ public class MainApp extends Application<ServiceControladorProfessorConfiguratio
     @Override
     public void run(ServiceControladorProfessorConfiguration configuration, Environment environment) throws Exception {
         environment.jersey().register(new CadastrarProfessorResource());
+        environment.jersey().register(new ListarProfessorResource());
     }
 }

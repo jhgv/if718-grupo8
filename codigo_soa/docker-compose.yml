@@ -1,15 +1,5 @@
 version: '3'
 services:
-  servicecontroladorusuario:
-    build: servico-controlador-acesso/
-    links:
-      - servicocadastrousuario
-    ports:
-      - "8080:8080"
-  servicocadastrousuario:
-    build: servico-cadastro-usuario/
-    ports:
-      - "9999:8080"
   servicocontroladorprofessor:
     build: servico-controlador-professor/
     links:
@@ -23,7 +13,6 @@ services:
   servicefachada:
     build: servico-fachada/
     links:
-      - servicecontroladorusuario
       - servicocontroladorprofessor
     ports:
       - "9996:8080"

@@ -11,7 +11,7 @@ COPY gradlew $SOURCE_HOME/
 COPY gradle $SOURCE_HOME/gradle
 
 RUN chmod a+x gradlew
-RUN ./gradlew downloadDependencies
+RUN ./gradlew clean build
 
 RUN mkdir -p $APP_HOME
 COPY . $SOURCE_HOME

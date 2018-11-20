@@ -18,7 +18,7 @@ Este projeto tem como objetivo o desenvolvimento de um sistema que possibilita a
 
 ### Como rodar projeto microserviço
 
-É necessário estar com o Docker Engine rodando.
+É necessário estar com o Docker Engine rodando. A primeira fez que o comando for executado, vai demorar um pouco.
 
 ```sh
 $ cd codigo_soa
@@ -26,6 +26,9 @@ $ docker-compose up --build
 ```
 
 Ir para https://localhost:9995/home
+
+GIF demonstrativo da operação de cadastrar professor:
+![](cadastro-professor.gif)
 
 
    [codigo_soa]: <https://github.com/jhgv/if718-grupo8/tree/master/codigo_soa>

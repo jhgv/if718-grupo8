@@ -8,13 +8,13 @@ Este projeto tem como objetivo o desenvolvimento de um sistema que possibilita a
   - Rielson Leandro Silva de Lima (rlsl)
 
 ### Artefatos
+* Entrega 1 - Análise e Projeto de Sistemas - Documento de análise de requisitos da primeira entrega.
 * Apresentação 1.pdf - Apresentação da primeira entrega (RUP)
 * Apresentação 2.pdf - awesome web-based text editor (SOA)
+* diagramas.asta - Arquivo do programa Astah com os diagra
 * [codigo_rup] - Código fonte da primeira entrega.
 * [codigo_soa] - Código fonte da primeira entrega.
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
 
 ### Como rodar projeto microserviço
 
@@ -24,6 +24,9 @@ And of course Dillinger itself is open source with a [public repository][dill]
 $ cd codigo_soa
 $ docker-compose up --build
 ```
+
+Ir para https://localhost:9995/home
+
 
    [codigo_soa]: <https://github.com/jhgv/if718-grupo8/tree/master/codigo_soa>
    [codigo_rup]: <https://github.com/jhgv/if718-grupo8/tree/master/codigo_rup>
